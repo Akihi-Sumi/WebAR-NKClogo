@@ -8,15 +8,15 @@
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <title>NKC-Logo</title>
     </head>
-    <body>
+    <body style="margin: 0; overflow: hidden;">
         <a-scene embedded arjs vr-mode-ui="enabled: false;">
             <a-assets>
                 <a-asset-item id="logo" src="./assets/nkc-logo.glb"></a-asset-item>
             </a-assets>
 
-            <a-maker type="pattern" url="./assets/pattern-WebAR-NKC">
+            <a-marker type="pattern" url="./assets/pattern-WebAR-NKC">
                 <a-entity gltf-model="#logo"></a-entity>
-            </a-maker>
+            </a-marker>
 
             <a-entity camera></a-entity>
         </a-scene>
